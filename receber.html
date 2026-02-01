@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Style</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script2.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Urban Style 👕</div>
+  <nav>
+    <a href="#" onclick="abrirCarrinho()">Carrinho 🛒</a>
+  </nav>
+</header>
+
+
+  <!-- Banner -->
+  <div class="background-container">
+    <div class="overlay">
+      <div class="content">
+        <h1>Vista sua atitude</h1>
+        <p>Moda urbana, moderna e cheia de estilo</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produtos -->
+<section id="produtos" class="container">
+  <div class="card">
+    <img src="img/camiseta1.png">
+    <h2>Camiseta Basica Preto</h2>
+    <p>R$ 100</p>
+    <button onclick="adicionarAoCarrinho(1,'Camiseta basica',100)">Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="img/calca1.png">
+    <h2>Calça Jeans Azul Tradicional</h2>
+    <p>R$ 160</p>
+    <button onclick="adicionarAoCarrinho(2,'Calça Jeans Tradicional',160)">Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="img/jaqueta1.png">
+    <h2>Jaqueta Jeans Claro</h2>
+    <p>R$ 160</p>
+    <button onclick="adicionarAoCarrinho(3,'Jaqueta Jeans',160)">Comprar</button>
+  </div>
+
+    <div class="card">
+    <img src="img/camiseta2.png">
+    <h2>Camiseta Oversized com Estampa</h2>
+    <p>R$ 70</p>
+    <button onclick="adicionarAoCarrinho(4,'Camiseta Oversized',70)">Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="img/calca2.png">
+    <h2>Calça jeans Enrica com estampa</h2>
+    <p>R$ 270</p>
+    <button onclick="adicionarAoCarrinho(5,'Calça jeans Enrica',270)">Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="img/jaqueta2.png">
+    <h2>TBMPOY Jaqueta Aviador</h2>
+    <p>R$ 380</p>
+    <button onclick="adicionarAoCarrinho(6,'TBMPOY Jaqueta',380)">Comprar</button>
+  </div>
+
+    <div class="card">
+    <img src="img/camiseta3.png">
+    <h2>Camiseta Malha Fria Lisa</h2>
+    <p>R$ 40</p>
+    <button onclick="adicionarAoCarrinho(7,'Camiseta Malha Fria',40)">Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="img/calca3.png">
+    <h2>OYOANGLE Calça jeans skinny</h2>
+    <p>R$ 490</p>
+    <button onclick="adicionarAoCarrinho(8,'OYOANGLE Calça jeans',490)">Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="img/jaqueta3.png">
+    <h2>Jueshanzj Jaqueta de Couro</h2>
+    <p>R$ 170</p>
+    <button onclick="adicionarAoCarrinho(9,'Jaqueta de Couro',170)">Comprar</button>
+  </div>
+
+</section>
+
+<div id="aba-carrinho" class="aba-carrinho">
+  <div class="topo-carrinho">
+    <h2>🛒 Meu Carrinho</h2>
+    <button onclick="fecharCarrinho()">❌</button>
+  </div>
+
+  <div id="lista-carrinho"></div>
+  <h3>Total: R$ <span id="total">0</span></h3>
+  <button onclick="comprar()">Comprar</button>
+</div>
+
+  <footer class="footer">
+    <p>&copy; 2026 Urban Style. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
